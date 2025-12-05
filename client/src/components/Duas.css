@@ -1,0 +1,198 @@
+.duas {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  margin: 0;
+  color: #333;
+}
+
+.error {
+  background-color: #f44336;
+  color: white;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 18px;
+}
+
+.search-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.search-button,
+.clear-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.search-button:hover {
+  background-color: #0b7dda;
+}
+
+.clear-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.clear-button:hover {
+  background-color: #da190b;
+}
+
+.duas-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.duas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+}
+
+.dua-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.dua-item:hover {
+  border-color: #2196F3;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.2);
+}
+
+.dua-item.active {
+  border-color: #2196F3;
+  background-color: #e3f2fd;
+}
+
+.dua-item h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+}
+
+.dua-preview {
+  color: #666;
+  font-size: 14px;
+  margin: 0;
+}
+
+.dua-detail {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #999;
+  line-height: 1;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+.dua-detail h2 {
+  margin-top: 0;
+  color: #333;
+  padding-right: 40px;
+}
+
+.dua-section {
+  margin-bottom: 25px;
+}
+
+.dua-section h3 {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.dua-text {
+  font-size: 24px;
+  line-height: 1.8;
+  color: #333;
+  text-align: right;
+  direction: rtl;
+  font-family: 'Arial', sans-serif;
+}
+
+.dua-transliteration {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+  font-style: italic;
+}
+
+.dua-translation {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .duas-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .dua-detail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    overflow-y: auto;
+    border-radius: 0;
+  }
+}
+
